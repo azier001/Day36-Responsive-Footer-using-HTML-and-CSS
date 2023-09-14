@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#footer {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.upper-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.up-left {
+  width: 700px;
+  display: flex;
+}
+
+.image {
+  width: 200px;
+  position: relative;
+}
+
+.up-left img {
+  position: absolute;
+  width: 50%;
+  left: 30%;
+}
+
+.content {
+  width: 400px;
+  margin-left: 3rem;
+}
+
+.footer-heading {
+  color: #404040;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.up-right ul {
+  display: flex;
+  list-style: none;
+}
+
+.up-right ul li {
+  height: 40px;
+  width: 40px;
+  padding: 6px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.8rem 0 0;
+  border-radius: 5px;
+}
+
+.up-right ul li a {
+  color: white;
+}
+
+.linkedIn {
+  background-color: #0077b5;
+}
+
+.instagram {
+  background: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4);
+}
+
+.youtube {
+  background-color: #f50000;
+}
+
+.github {
+  background-color: #24292e;
+}
+
+.down-footer {
+  width: 100%;
+  color: #404040;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-li {
+  display: flex;
+  list-style: none;
+}
+
+.footer-li li {
+  padding: 0 1rem;
+}
+
+.footer-li li a {
+  text-decoration: none;
+  color: #404040;
+}
+
+@media screen and (max-width: 821px) {
+  .up-left {
+    width: 100%;
+  }
+
+  .upper-footer,
+  .down-footer,
+  .up-left {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image {
+    margin: 2rem 0;
+  }
+
+  .up-left img {
+    width: 40%;
+    left: 35%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    width: 80%;
+    margin: 35px auto;
+    text-align: center;
+  }
+
+  .footer-heading {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .down-footer {
+    flex-direction: column-reverse;
+  }
+
+  .down-footer .leftPara {
+    margin-top: 1rem;
+  }
+
+  .footer-li {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    margin: 1rem auto;
+  }
+}
